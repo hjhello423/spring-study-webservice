@@ -1,11 +1,12 @@
 package com.hongjun.webservice.domain.posts;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class PostSaveRequestDto {
+public class PostsSaveRequestDto {
 
     private String title;
     private String content;
@@ -17,5 +18,12 @@ public class PostSaveRequestDto {
                 .content(content)
                 .author(author)
                 .build();
+    }
+
+    @Builder
+    public PostsSaveRequestDto(String title, String content, String author) {
+        this.title = title;
+        this.content = content;
+        this.author = author;
     }
 }

@@ -1,0 +1,2 @@
+insert into posts (title, author, content, created_date, modified_date) values ('test', 'test1@gmail.com', 'test1 body', now(), now());
+insert into posts (title, author, content, created_date, modified_date) values ('test', 'test2@gmail.com', 'test2 body', now(), now());

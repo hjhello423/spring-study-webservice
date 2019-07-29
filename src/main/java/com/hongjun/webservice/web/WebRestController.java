@@ -1,6 +1,6 @@
 package com.hongjun.webservice.web;
 
-import com.hongjun.webservice.domain.posts.PostSaveRequestDto;
+import com.hongjun.webservice.domain.posts.PostsSaveRequestDto;
 import com.hongjun.webservice.domain.posts.PostsRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +20,7 @@ public class WebRestController {
     }
 
     @PostMapping("/posts")
-    public void savePosts(@RequestBody PostSaveRequestDto dto) {
+    public void savePosts(@RequestBody PostsSaveRequestDto dto) {
         postsRepository.save(dto.toEntity());
     }
 }
