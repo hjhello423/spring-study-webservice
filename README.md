@@ -1,6 +1,7 @@
-### Spring boot를 이용하여 웹서비스 개발을 실습
+# Spring boot를 이용하여 웹서비스 개발 실습
 
-작성된 git예제를 보고 따라서 실습해보기.
+작성된 git예제를 보고 따라서 실습해보기
+
 참고 예제 : https://github.com/jojoldu/springboot-webservice
 
 
